@@ -1,0 +1,15 @@
+div.jumbotron
+{
+    text-align: center;
+}
+
+h1.display-4
+{
+    margin-bottom: 50px;
+}
+
+
+p#buton
+{
+    margin: 100px;
+}

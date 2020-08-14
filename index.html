@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>ANUM28</title>
+    <script type="text/javascript">
+    var numer = Math.floor(Math.random()*5);
+    function obiad (){
+
+        var obiadek = ["frytki","kotlet","naleśniki","kurczak dowolny","qurito"]
+        
+
+
+    document.getElementById('buton').innerHTML = '<div>  </div>' + obiadek[numer]
+    
+}
+    function zdjęcie ()
+    {
+        document.getElementById('buton').innerHTML = '<div> 1 </div>'
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1 class="display-4">ANUM28</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p id="buton">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <div id="przyciski">
+            <button  type="button" class="btn btn-danger" onclick="obiad();">obiad</button>
+            <button  type="button" class="btn btn-danger" onclick="zdjęcie();">zdjęcie</button>
+        </div>
+          </div>
+    </header>
+</body>
+</html>
